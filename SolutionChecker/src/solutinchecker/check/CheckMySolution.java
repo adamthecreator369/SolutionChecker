@@ -19,7 +19,6 @@ public class CheckMySolution {
 		int errors = 0;
 		
 		while (scanner.hasNext()) {
-			
 			try {
 				mine = scanner.nextLine();
 				theirs = otherScanner.nextLine();
@@ -33,24 +32,16 @@ public class CheckMySolution {
 				System.out.println("Incorrect line in your output: \n");
 				System.out.printf("Yours: %s \nTheirs: %s \n\n", mine, theirs); 
 			}
-			
-			
 		}
 		
 		if (otherScanner.hasNext()) { 
-			
 			errors++; 
-			
 			System.out.println("Your output has less data than the correct solution.\n\n Missing data: \n");
 			
 			while (otherScanner.hasNext()) {
-				
 				String missing_line = otherScanner.nextLine();
 				System.out.println(missing_line);
-				
 			}
-			
-			
 		}
 		
 		if (errors == 0) { System.out.println("Your output is correct."); }
@@ -59,7 +50,6 @@ public class CheckMySolution {
 		otherScanner.close();
 		mySolution.close();
 		correctSolution.close();
-		
 	}
 
 }
