@@ -29,7 +29,7 @@ public class CheckMySolution {
 			} catch (NoSuchElementException e) {
 				// The solution being checked contains more data then the correct
 				// solution so we print a notification to the console. 
-				System.out.println("Your output is incorrect and contains too much data.");
+				System.out.println("Your solution is incorrect and contains too much data.");
 				System.exit(-1);
 			} 
 			// If the line in the solutions do not match.
